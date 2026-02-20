@@ -1,0 +1,92 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTA from '../../components/CTA.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.id.replace(/\.mdx?$/, '') },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+
+const { title, description, client, industry, technologies, liveUrl, problem, process, results } = project.data;
+---
+
+<BaseLayout
+  title={`${title} — Fivesco`}
+  description={description}
+  type="article"
+  publishDate={project.data.publishDate}
+>
+  <article class="py-20">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="mb-12">
+        <a href="/projects" class="text-sm font-medium text-primary-600 hover:text-primary-800 transition-colors">&larr; All Projects</a>
+        <h1 class="mt-4 text-4xl font-bold text-navy-900 sm:text-5xl">{title}</h1>
+        <p class="mt-4 text-lg text-gray-600">{description}</p>
+
+        <div class="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Client</p>
+            <p class="mt-1 text-sm font-medium text-navy-900">{client}</p>
+          </div>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Industry</p>
+            <p class="mt-1 text-sm font-medium text-navy-900">{industry}</p>
+          </div>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Tech</p>
+            <p class="mt-1 text-sm font-medium text-navy-900">{technologies.slice(0, 3).join(', ')}</p>
+          </div>
+          {liveUrl && (
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Live Site</p>
+              <a href={liveUrl} target="_blank" rel="noopener noreferrer" class="mt-1 inline-block text-sm font-medium text-primary-600 hover:text-primary-800 transition-colors">
+                Visit &nearr;
+              </a>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <!-- Problem / Process / Results -->
+      <div class="space-y-12 mb-12">
+        <div class="rounded-xl border border-gray-100 bg-gray-50 p-8">
+          <h2 class="text-xl font-bold text-navy-900">The Problem</h2>
+          <p class="mt-3 text-gray-600 leading-relaxed">{problem}</p>
+        </div>
+        <div class="rounded-xl border border-gray-100 bg-gray-50 p-8">
+          <h2 class="text-xl font-bold text-navy-900">The Process</h2>
+          <p class="mt-3 text-gray-600 leading-relaxed">{process}</p>
+        </div>
+        <div class="rounded-xl border border-gray-100 bg-gray-50 p-8">
+          <h2 class="text-xl font-bold text-navy-900">The Results</h2>
+          <p class="mt-3 text-gray-600 leading-relaxed">{results}</p>
+        </div>
+      </div>
+
+      <!-- Technologies -->
+      <div class="mb-12">
+        <h2 class="text-xl font-bold text-navy-900">Technologies Used</h2>
+        <div class="mt-4 flex flex-wrap gap-2">
+          {technologies.map((tech) => (
+            <span class="rounded-full bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700">{tech}</span>
+          ))}
+        </div>
+      </div>
+
+      <!-- Markdown Body -->
+      <div class="prose mx-auto">
+        <Content />
+      </div>
+    </div>
+  </article>
+
+  <CTA title="Have a similar project in mind?" description="Let's chat about how we can build something great for your business." />
+</BaseLayout>
