@@ -124,9 +124,17 @@
 
 .fade-in {
   opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
+  animation: fadeInUp 0.4s ease-out forwards;
 }
 
 .fade-in-visible {
   opacity: 1;
+}
+
+/* Speed up view transition animations */
+::view-transition-old(root) {
+  animation-duration: 100ms;
+}
+::view-transition-new(root) {
+  animation-duration: 100ms;
 }
