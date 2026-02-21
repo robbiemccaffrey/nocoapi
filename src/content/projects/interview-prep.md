@@ -1,5 +1,5 @@
 ---
-title: "Interview Prep App"
+title: "SWE Interview Prep"
 description: "An interactive study tool for technical interview preparation covering data structures, algorithms, and system design with progress tracking."
 client: "Personal Project"
 industry: "Education"
@@ -17,7 +17,7 @@ publishDate: 2024-08-10
 
 ## Overview
 
-The Interview Prep App is an interactive study tool designed for software engineering interview preparation. It combines structured learning material with hands-on coding practice, all in a clean, distraction-free interface.
+SWE Interview Prep is an interactive study tool designed for software engineering interview preparation. It combines structured learning material with hands-on coding practice, all in a clean, distraction-free interface.
 
 ## The Challenge
 
