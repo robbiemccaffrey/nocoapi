@@ -3,10 +3,10 @@ const currentYear = new Date().getFullYear();
 
 const footerLinks = {
   Services: [
-    { label: 'Web Design', href: '/contact' },
-    { label: 'Web Development', href: '/contact' },
-    { label: 'SEO', href: '/contact' },
-    { label: 'Performance', href: '/contact' },
+    { label: 'Web Design', href: '/services' },
+    { label: 'Web Development', href: '/services' },
+    { label: 'SEO', href: '/services' },
+    { label: 'Performance', href: '/services' },
   ],
   Company: [
     { label: 'About', href: '/about' },
@@ -19,12 +19,12 @@ const footerLinks = {
 
 <footer class="bg-navy-950 text-gray-300">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-    <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-4">
       <!-- Brand -->
       <div>
         <a href="/" class="flex items-center gap-2 text-xl font-bold text-white font-[family-name:var(--font-display)]">
-          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600 text-sm font-bold text-white">F</span>
-          Fivesco
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600 text-sm font-bold text-white">N</span>
+          nocoapi
         </a>
         <p class="mt-4 text-sm leading-relaxed text-gray-400">
           Professional web design and development for businesses that want to stand out online.
@@ -44,11 +44,27 @@ const footerLinks = {
           </ul>
         </div>
       ))}
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-white">Contact</h3>
+        <ul class="mt-4 space-y-3">
+          <li>
+            <a href="mailto:hello@nocoapi.com" class="text-sm text-gray-400 transition-colors hover:text-white">hello@nocoapi.com</a>
+          </li>
+          <li>
+            <a href="tel:+353857113068" class="text-sm text-gray-400 transition-colors hover:text-white">085 711 3068</a>
+          </li>
+          <li>
+            <span class="text-sm text-gray-400">Dublin, Ireland</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="mt-12 border-t border-gray-800 pt-8 text-center">
       <p class="text-sm text-gray-500">
-        &copy; {currentYear} Fivesco. All rights reserved.
+        &copy; {currentYear} nocoapi. All rights reserved.
       </p>
     </div>
   </div>

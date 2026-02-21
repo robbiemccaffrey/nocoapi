@@ -3,7 +3,7 @@ title: "Interview Prep App"
 description: "An interactive study tool for technical interview preparation covering data structures, algorithms, and system design with progress tracking."
 client: "Personal Project"
 industry: "Education"
-thumbnail: "/images/projects/interview-prep-thumb.jpg"
+thumbnail: "/images/projects/interview-prep-thumb.webp"
 screenshots: []
 tags: ["Web Application", "Education", "Developer Tools"]
 technologies: ["React", "TypeScript", "Vite"]

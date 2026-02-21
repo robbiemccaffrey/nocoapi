@@ -3,7 +3,7 @@ title: "Learn Italian"
 description: "A full-stack language learning app featuring vocabulary practice, image-based exercises with OCR, and audio pronunciation powered by text-to-speech."
 client: "Personal Project"
 industry: "Education"
-thumbnail: "/images/projects/learn-italian-thumb.jpg"
+thumbnail: "/images/projects/learn-italian-thumb.webp"
 screenshots: []
 tags: ["Web Application", "Education", "Language Learning"]
 technologies: ["React", "TypeScript", "Express", "Vite", "Tesseract.js"]

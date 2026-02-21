@@ -48,12 +48,12 @@ const services = [
 
 const testimonials = [
   {
-    quote: "Fivesco delivered a site that exceeded our expectations. The attention to detail and performance was outstanding — our page load times dropped by 60%.",
+    quote: "nocoapi delivered a site that exceeded our expectations. The attention to detail and performance was outstanding — our page load times dropped by 60%.",
     name: "Sarah Mitchell",
     role: "Founder, Bloom Studio",
   },
   {
-    quote: "Working with Fivesco was seamless from start to finish. They understood our vision immediately and translated it into a beautiful, functional website.",
+    quote: "Working with nocoapi was seamless from start to finish. They understood our vision immediately and translated it into a beautiful, functional website.",
     name: "James O'Brien",
     role: "Director, Coastal Properties",
   },
@@ -66,8 +66,8 @@ const testimonials = [
 ---
 
 <BaseLayout
-  title="Fivesco — Web Design & Development"
-  description="Professional web design and development for businesses that want to grow online. Fast, modern websites built to convert."
+  title="Web Design Dublin | nocoapi — Fast, Modern Websites"
+  description="Professional web design and development in Dublin. Fast, modern websites built to convert visitors into customers. SEO, performance, and responsive design included."
 >
   <!-- Hero -->
   <Hero />
@@ -76,13 +76,18 @@ const testimonials = [
   <section class="py-20 bg-gray-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold text-navy-900 sm:text-4xl">What you get</h2>
-        <p class="mt-4 text-lg text-gray-600">Every project is built with these principles at its core.</p>
+        <h2 class="text-3xl font-bold text-navy-900 sm:text-4xl">Services</h2>
+        <p class="mt-4 text-lg text-gray-600">Everything your business needs to succeed online.</p>
       </div>
       <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
           <ServiceCard {...service} />
         ))}
+      </div>
+      <div class="mt-10 text-center">
+        <a href="/services" class="text-base font-medium text-primary-600 hover:text-primary-800 transition-colors">
+          View All Services &rarr;
+        </a>
       </div>
     </div>
   </section>
@@ -102,6 +107,7 @@ const testimonials = [
             tags={project.data.tags}
             slug={project.id.replace(/\.mdx?$/, '')}
             liveUrl={project.data.liveUrl}
+            thumbnail={project.data.thumbnail}
           />
         ))}
       </div>

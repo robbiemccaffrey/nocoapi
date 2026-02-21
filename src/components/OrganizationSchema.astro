@@ -1,0 +1,71 @@
+---
+const schema = {
+  "@context": "https://schema.org",
+  "@type": ["Organization", "ProfessionalService"],
+  "name": "nocoapi",
+  "url": "https://nocoapi.com",
+  "email": "hello@nocoapi.com",
+  "telephone": "+353857113068",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dublin",
+    "addressCountry": "IE"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Dublin"
+    },
+    {
+      "@type": "Country",
+      "name": "Ireland"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Web Design & Development Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Web Design",
+          "description": "Custom, responsive website design tailored to your brand and business goals."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Web Development",
+          "description": "Fast, modern web development using Astro, React, and Next.js."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "SEO Optimisation",
+          "description": "Technical SEO, on-page optimisation, and local SEO for Dublin businesses."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Performance Optimisation",
+          "description": "Core Web Vitals optimisation, image compression, and caching strategies."
+        }
+      }
+    ]
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Robert McCaffrey",
+    "jobTitle": "Web Developer"
+  },
+  "sameAs": []
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

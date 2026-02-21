@@ -1,34 +1,42 @@
 ---
 title: "TaxZap — Consumer Tax Platform"
-description: "A consumer-facing tax filing platform that helps taxpayers claim refunds in minutes. Built to scale from early product to hundreds of thousands of filings."
+description: "A consumer-facing tax filing platform that helps over 130,000 taxpayers across Ireland and the UK claim refunds in minutes using AI and Open Banking."
 client: "TaxZap"
 industry: "FinTech"
-thumbnail: "/images/projects/taxzap-thumb.jpg"
+thumbnail: "/images/projects/taxzap-thumb.webp"
 screenshots: []
 tags: ["Web Application", "FinTech", "SaaS"]
 technologies: ["TypeScript", "Node.js", "React", "Postgres", "AWS", "Terraform"]
 liveUrl: "https://taxzap.com/uk"
-problem: "TaxZap needed a robust, scalable platform that could guide everyday taxpayers through the refund claiming process — fast, secure, and simple enough for anyone to use. The existing setup couldn't handle the growth trajectory the company was targeting."
-process: "We architected the platform from the ground up with scalability in mind. The frontend was built in React for a smooth, guided user experience, while the backend leveraged Node.js and Postgres for reliable data handling. Infrastructure was provisioned with Terraform on AWS, ensuring repeatable deployments and easy scaling. We worked closely with the product team to iterate on the user flow, reducing drop-off rates at each step of the filing process."
-results: "The platform now powers hundreds of thousands of tax filings. Load times dropped significantly, user completion rates improved, and the infrastructure scales elastically during peak filing season. The architecture we established continues to support rapid feature development."
+problem: "TaxZap needed a robust, scalable platform that could guide everyday taxpayers through the refund claiming process — fast, secure, and simple enough for anyone to use. With over 11.5 million UK taxpayers filing self-assessments annually and an estimated £2.64 billion in unclaimed CIS refunds alone, the opportunity was massive but the existing setup couldn't handle the growth trajectory."
+process: "The platform was architected from the ground up with scalability at its core. The React frontend delivers a smooth, guided experience — including the signature gamified 'swipe' interface that lets users confirm or reject suggested expenses in seconds. The backend leverages Node.js and Postgres for reliable, secure handling of sensitive financial data, with Open Banking integrations to pull transaction data directly from users' bank accounts. Infrastructure was provisioned with Terraform on AWS, enabling repeatable deployments and elastic scaling during peak filing season."
+results: "The platform now serves over 130,000 clients across Ireland and the UK, with 340% sales growth since launch. Revenue exceeded £1 million, and TaxZap raised £2.2 million in seed funding led by Affinity Ventures. The architecture scales elastically during peak filing season and the team continues shipping features rapidly on the foundations that were built."
 featured: true
 publishDate: 2024-06-15
 ---
 
 ## Overview
 
-TaxZap is a consumer tax platform that simplifies the refund claiming process for taxpayers. The challenge was building a system that could handle massive scale while remaining intuitive for users who may have never filed a tax return online before.
+TaxZap is an Irish-founded FinTech platform — dubbed the "Tinder of Tax" — that uses AI and Open Banking to automate self-assessment tax filing. Founded in 2021, it enables taxpayers in Ireland and the UK to file returns and claim refunds in under 10 minutes. The platform is a registered tax agent with Irish Revenue and a recognised HMRC software provider in the UK.
 
 ## The Challenge
 
-The platform needed to handle sensitive financial data securely, integrate with government tax systems, and provide a user experience simple enough for anyone to complete in minutes. Performance during peak filing season was critical — any downtime meant lost revenue and frustrated users.
+The tax filing market is enormous but underserved. Over 11.5 million UK taxpayers file self-assessments each year, and 1.1 million regularly miss deadlines. An estimated 1.2 million CIS subcontractors could collectively claim £2.64 billion in unclaimed refunds. The process is complex enough that most people either overpay or don't file at all. TaxZap needed a platform that could make filing as simple as swiping through a dating app — while handling sensitive financial data securely and scaling to meet viral growth.
 
-## Our Approach
+## Technical Approach
 
-We took a full-stack approach, building both the frontend experience and backend infrastructure. The React-based frontend guides users through each step with clear progress indicators and inline validation. On the backend, we designed a robust API layer with Postgres for reliable transaction handling.
+The platform was built as a Progressive Web App with React powering the frontend experience. The standout feature is the gamified swipe interface — similar to dating apps — where users quickly confirm or reject AI-suggested allowable expenses. Behind the scenes, Open Banking integrations connect directly to users' bank accounts to pull transaction data automatically, and AI analyses that data to identify eligible tax reliefs across medical expenses, tuition fees, flat-rate expenses, Rent Tax Credit, and CIS subcontractor refunds.
 
-Infrastructure was a key focus. Using Terraform, we created reproducible environments that could scale horizontally during high-traffic periods. Monitoring and alerting were built in from day one.
+The backend runs on Node.js with Postgres for transactional data — critical when dealing with financial records and government tax system integrations. Infrastructure was provisioned entirely with Terraform on AWS, designed for horizontal scaling during peak filing periods when traffic spikes dramatically.
+
+Monitoring, alerting, and security were built in from day one — non-negotiable when handling taxpayer data and integrating with Revenue and HMRC systems.
 
 ## Results
 
-The platform successfully scaled to handle hundreds of thousands of filings, with infrastructure costs optimised through right-sizing and auto-scaling policies. The clean architecture enables the team to ship new features rapidly without compromising stability.
+The platform has scaled to serve over 130,000 clients across the UK and Ireland. Key outcomes:
+
+- **340% sales growth** since launching in November 2021
+- **Revenue exceeding £1 million** annually
+- **£2.2 million seed round** led by Affinity Ventures, with angel investors including the CEO of Wayflyer
+- **Sub-second page loads** and infrastructure that scales elastically during filing season
+- TaxZap also built one of the world's largest tax-focused TikTok communities with 50,000+ followers, driving organic growth that the platform was built to handle

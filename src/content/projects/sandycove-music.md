@@ -3,7 +3,7 @@ title: "Sandycove School of Music"
 description: "A professional website for a music school featuring a contact inquiry system with AWS SES email notifications, built with Astro and Express."
 client: "Sandycove School of Music"
 industry: "Education"
-thumbnail: "/images/projects/sandycove-thumb.jpg"
+thumbnail: "/images/projects/sandycove-thumb.webp"
 screenshots: []
 tags: ["Business Website", "Education", "Static Site"]
 technologies: ["Astro", "Tailwind CSS", "TypeScript", "Express", "AWS SES"]

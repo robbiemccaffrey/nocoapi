@@ -2,14 +2,15 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
+import CTA from '../../components/CTA.astro';
 
 const allProjects = await getCollection('projects');
 const projects = allProjects.sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
 ---
 
 <BaseLayout
-  title="Projects — Fivesco"
-  description="A showcase of web design and development projects across FinTech, education, and more."
+  title="Projects | Web Design Portfolio | nocoapi Dublin"
+  description="Web design and development portfolio showcasing projects across FinTech, education, and SaaS. See what nocoapi has built for businesses in Dublin and beyond."
 >
   <section class="py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -27,9 +28,12 @@ const projects = allProjects.sort((a, b) => b.data.publishDate.getTime() - a.dat
             tags={project.data.tags}
             slug={project.id.replace(/\.mdx?$/, '')}
             liveUrl={project.data.liveUrl}
+            thumbnail={project.data.thumbnail}
           />
         ))}
       </div>
     </div>
   </section>
+
+  <CTA />
 </BaseLayout>
