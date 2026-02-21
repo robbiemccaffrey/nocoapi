@@ -360,69 +360,127 @@ const services = [
         <h2 class="text-3xl font-bold text-navy-900 sm:text-4xl">Frequently Asked Questions</h2>
         <p class="mt-4 text-lg text-gray-600">Common questions about working together.</p>
       </div>
-      <div class="mt-12 space-y-6">
-        <details class="group rounded-xl border border-gray-200 bg-white shadow-sm">
-          <summary class="flex cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 [&::-webkit-details-marker]:hidden">
-            How long does a website take to build?
-            <svg class="h-5 w-5 shrink-0 text-gray-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
-          </summary>
-          <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
-            A typical brochure site takes 2-4 weeks from kickoff to launch. More complex projects with custom functionality, databases, or integrations can take 6-10 weeks. I'll give you a clear timeline after our initial conversation.
+      <div class="mt-12 divide-y divide-gray-200 rounded-xl border border-gray-200 bg-white shadow-sm" id="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 transition-colors hover:text-primary-600" aria-expanded="false">
+            <span>How long does a website take to build?</span>
+            <svg class="faq-icon h-5 w-5 shrink-0 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+          </button>
+          <div class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
+                A typical brochure site takes 2-4 weeks from kickoff to launch. More complex projects with custom functionality, databases, or integrations can take 6-10 weeks. I'll give you a clear timeline after our initial conversation.
+              </div>
+            </div>
           </div>
-        </details>
+        </div>
 
-        <details class="group rounded-xl border border-gray-200 bg-white shadow-sm">
-          <summary class="flex cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 [&::-webkit-details-marker]:hidden">
-            What's the process like?
-            <svg class="h-5 w-5 shrink-0 text-gray-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
-          </summary>
-          <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
-            We start with a discovery call to understand your business and goals. Then I create a design mockup for your approval, build the site, and launch it after testing. You'll have input at every stage — no surprises.
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 transition-colors hover:text-primary-600" aria-expanded="false">
+            <span>What's the process like?</span>
+            <svg class="faq-icon h-5 w-5 shrink-0 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+          </button>
+          <div class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
+                We start with a discovery call to understand your business and goals. Then I create a design mockup for your approval, build the site, and launch it after testing. You'll have input at every stage — no surprises.
+              </div>
+            </div>
           </div>
-        </details>
+        </div>
 
-        <details class="group rounded-xl border border-gray-200 bg-white shadow-sm">
-          <summary class="flex cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 [&::-webkit-details-marker]:hidden">
-            Do you offer ongoing support?
-            <svg class="h-5 w-5 shrink-0 text-gray-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
-          </summary>
-          <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
-            Yes. After launch, I offer ongoing maintenance and support if you need it — content updates, new features, performance monitoring. We can agree on a monthly arrangement or handle things on a per-request basis.
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 transition-colors hover:text-primary-600" aria-expanded="false">
+            <span>Do you offer ongoing support?</span>
+            <svg class="faq-icon h-5 w-5 shrink-0 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+          </button>
+          <div class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
+                Yes. After launch, I offer ongoing maintenance and support if you need it — content updates, new features, performance monitoring. We can agree on a monthly arrangement or handle things on a per-request basis.
+              </div>
+            </div>
           </div>
-        </details>
+        </div>
 
-        <details class="group rounded-xl border border-gray-200 bg-white shadow-sm">
-          <summary class="flex cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 [&::-webkit-details-marker]:hidden">
-            Will my site be found on Google?
-            <svg class="h-5 w-5 shrink-0 text-gray-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
-          </summary>
-          <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
-            Every site I build includes technical SEO foundations — semantic HTML, structured data, fast load times, sitemaps, and meta tags. For local businesses in Dublin, I also set up local SEO. This gives you a strong starting point for ranking.
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 transition-colors hover:text-primary-600" aria-expanded="false">
+            <span>Will my site be found on Google?</span>
+            <svg class="faq-icon h-5 w-5 shrink-0 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+          </button>
+          <div class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
+                Every site I build includes technical SEO foundations — semantic HTML, structured data, fast load times, sitemaps, and meta tags. For local businesses in Dublin, I also set up local SEO. This gives you a strong starting point for ranking.
+              </div>
+            </div>
           </div>
-        </details>
+        </div>
 
-        <details class="group rounded-xl border border-gray-200 bg-white shadow-sm">
-          <summary class="flex cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 [&::-webkit-details-marker]:hidden">
-            Can I update the site myself?
-            <svg class="h-5 w-5 shrink-0 text-gray-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
-          </summary>
-          <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
-            If you need to update content regularly, I can integrate a CMS (content management system) so you can edit text, images, and blog posts without touching code. Otherwise, I'm happy to handle updates for you.
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 transition-colors hover:text-primary-600" aria-expanded="false">
+            <span>Can I update the site myself?</span>
+            <svg class="faq-icon h-5 w-5 shrink-0 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+          </button>
+          <div class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
+                If you need to update content regularly, I can integrate a CMS (content management system) so you can edit text, images, and blog posts without touching code. Otherwise, I'm happy to handle updates for you.
+              </div>
+            </div>
           </div>
-        </details>
+        </div>
 
-        <details class="group rounded-xl border border-gray-200 bg-white shadow-sm">
-          <summary class="flex cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 [&::-webkit-details-marker]:hidden">
-            What do I need to provide?
-            <svg class="h-5 w-5 shrink-0 text-gray-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
-          </summary>
-          <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
-            At a minimum, I need your brand assets (logo, colours) and an idea of what you want the site to achieve. If you have copy and images ready, great — if not, I can help with content direction and source stock photography.
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full cursor-pointer items-center justify-between p-6 text-left font-semibold text-navy-900 transition-colors hover:text-primary-600" aria-expanded="false">
+            <span>What do I need to provide?</span>
+            <svg class="faq-icon h-5 w-5 shrink-0 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+          </button>
+          <div class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600">
+                At a minimum, I need your brand assets (logo, colours) and an idea of what you want the site to achieve. If you have copy and images ready, great — if not, I can help with content direction and source stock photography.
+              </div>
+            </div>
           </div>
-        </details>
+        </div>
       </div>
     </div>
   </section>
+
+  <script>
+    document.querySelectorAll('.faq-trigger').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item')!;
+        const content = item.querySelector('.faq-content') as HTMLElement;
+        const icon = btn.querySelector('.faq-icon') as SVGElement;
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+        // Close all others
+        document.querySelectorAll('.faq-item').forEach((other) => {
+          if (other !== item) {
+            const otherBtn = other.querySelector('.faq-trigger')!;
+            const otherContent = other.querySelector('.faq-content') as HTMLElement;
+            const otherIcon = otherBtn.querySelector('.faq-icon') as SVGElement;
+            otherBtn.setAttribute('aria-expanded', 'false');
+            otherContent.style.gridTemplateRows = '0fr';
+            otherIcon.style.transform = 'rotate(0deg)';
+          }
+        });
+
+        // Toggle current
+        if (isOpen) {
+          btn.setAttribute('aria-expanded', 'false');
+          content.style.gridTemplateRows = '0fr';
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          btn.setAttribute('aria-expanded', 'true');
+          content.style.gridTemplateRows = '1fr';
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
 
   <!-- CTA -->
   <CTA title="Ready to get started?" description="Get in touch to discuss your project. I'll get back to you within 24 hours with a free consultation." />
