@@ -3,7 +3,7 @@ title: "Xelda — Automated Payment Platform"
 description: "Built the product, platform, and infrastructure from zero to production for a Sequoia Arc startup, integrating 5,000+ banks and accountancy software into a unified payment automation engine for SMEs."
 client: "Xelda (Sequoia Arc 22)"
 industry: "FinTech"
-thumbnail: "/images/projects/xelda-thumb.webp"
+thumbnail: ""
 screenshots: []
 tags: ["Web Application", "FinTech", "Payments"]
 technologies: ["Python", "Django", "AWS", "Postgres", "React"]
