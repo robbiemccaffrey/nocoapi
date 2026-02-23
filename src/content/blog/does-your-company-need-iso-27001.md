@@ -1,7 +1,7 @@
 ---
 title: "Does Your Company Need ISO 27001 Compliance?"
 description: "A practical guide to understanding ISO 27001 certification — what it is, who needs it, what it costs, and how to decide if it's worth pursuing for your business."
-publishDate: 2026-02-23
+publishDate: 2025-02-15
 category: "Security"
 tags: ["ISO 27001", "Compliance", "Security", "Business"]
 draft: false
