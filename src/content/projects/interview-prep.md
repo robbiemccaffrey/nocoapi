@@ -1,13 +1,13 @@
 ---
-title: "SWE Interview Prep"
-description: "An interactive study tool for technical interview preparation covering data structures, algorithms, and system design with progress tracking."
+title: "Coding Interview Guide"
+description: "Free coding interview preparation — learn data structures, algorithms, and practice 24+ problems with in-browser Python execution. No signup required."
 client: "Personal Project"
 industry: "Education"
 thumbnail: "/images/projects/interview-prep-thumb.webp"
 screenshots: []
 tags: ["Web Application", "Education", "Developer Tools"]
 technologies: ["React", "TypeScript", "Vite"]
-liveUrl: "https://interview.robertmccaffrey.ie"
+liveUrl: "https://codinginterviewguide.com"
 problem: "Technical interview preparation involves juggling multiple resources — textbooks, LeetCode, YouTube videos, notes. There was no single, clean interface that combined learning material with hands-on coding practice and progress tracking."
 process: "We built a focused study tool with two core modules: Learn (covering 10 data structure and algorithm topics with clear explanations) and Practice (24 coding problems across difficulty levels). The in-browser Python execution uses Pyodide (WebAssembly), so users can write and run code without any backend. Progress is tracked via localStorage for a seamless, no-login experience."
 results: "The app provides a streamlined interview prep experience — no account required, no distractions. The in-browser code execution is fast and reliable, and progress persists across sessions. The clean UI keeps users focused on learning rather than navigating."
