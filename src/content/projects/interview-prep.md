@@ -17,7 +17,7 @@ publishDate: 2024-08-10
 
 ## Overview
 
-SWE Interview Prep is an interactive study tool designed for software engineering interview preparation. It combines structured learning material with hands-on coding practice, all in a clean, distraction-free interface.
+Coding Interview Guide is an interactive study tool designed for software engineering interview preparation. It combines structured learning material with hands-on coding practice, all in a clean, distraction-free interface.
 
 ## The Challenge
 
